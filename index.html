@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kura Bloodlust</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="tabby.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="introduction">
+        <img src="images/ava.gif" class="ava" />
+        <div>
+          <h1>Kura Bloodlust</h1>
+          <span>
+            Also known as Criss - an enthusiastic developer, gamer and weeb
+          </span>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <ul data-tabs class="tab-header">
+          <li><a data-tab href="#about" class="tab-head">About</a></li>
+          <li><a data-tab href="#social" class="tab-head">Social</a></li>
+          <li><a data-tab href="#projects" class="tab-head">Projects</a></li>
+          <li><a data-tab href="#services" class="tab-head">Services</a></li>
+          <li><a data-tab href="#servers" class="tab-head">Servers</a></li>
+        </ul>
+
+        <div data-tabs-content class="tab-content">
+          <div data-tabs-pane class="tabs-pane active" id="about">
+            <h2>So, who am I?</h2>
+
+            <p>
+              I'm just another nerd who likes <i>programming</i>,
+              <i>gaming</i> and <i>"weebing"</i>.
+            </p>
+            <p>
+              During the day, I spend my time as a developer, at night you can
+              usually find me occupied with games, anime or internet culture.
+            </p>
+            <p>
+              I tend to dabble in different projects and things, my interests
+              are wide spread. Feel free to get in contact with me to learn
+              more!
+            </p>
+          </div>
+          <div data-tabs-pane class="tabs-pane" id="social">
+            <a href="https://fedi.z0ne.moe/kura" class="icon">
+              <img src="images/social/fediverse.svg" alt="" />
+              Fediverse
+            </a>
+            <a href="https://matrix.to/#/@kura:yuri.im" class="icon">
+              <img src="images/social/bubbles.svg" alt="" />
+              Matrix
+            </a>
+            <a href="mailto:criss@kurabloodlust.eu" class="icon">
+              <img src="images/social/mail.svg" alt="" />
+              E-Mail
+            </a>
+            <a href="https://kitsu.io/users/kurabloodlust" class="icon">
+              <img src="images/social/kitsu.svg" alt="" />
+              Kitsu
+            </a>
+            <a href="https://twitch.tv/kurabloodlust" class="icon">
+              <img src="images/social/twitch.svg" alt="" />
+              Twitch
+            </a>
+            <a href="https://youtube.com/user/cking4live" class="icon">
+              <img src="images/social/youtube.svg" alt="" />
+              Youtube
+            </a>
+            <a href="https://steamcommunity.com/id/kurabloodlust" class="icon">
+              <img src="images/social/steam.svg" alt="" />
+              Steam
+            </a>
+            <a href="https://discord.gg/5HJctRu" class="icon">
+              <img src="images/social/discord.svg" alt="" />
+              Discord
+            </a>
+            <a href="xmpp:kura@xmpp.is" class="icon">
+              <img src="images/social/xmpp.svg" alt="" />
+              XMPP
+            </a>
+            <a href="https://reddit.com/u/kurabloodlust" class="icon">
+              <img src="images/social/reddit.svg" alt="" />
+              reddit
+            </a>
+            <a href="https://github.com/cking" class="icon">
+              <img src="images/social/github.svg" alt="" />
+              Github
+            </a>
+            <a href="https://gitlab.com/cking" class="icon">
+              <img src="images/social/gitlab.svg" alt="" />
+              Gitlab
+            </a>
+          </div>
+          <div data-tabs-pane class="tabs-pane" id="projects">
+            <p>
+              Things I am proud of, in no particular order
+            </p>
+
+            <dl>
+              <dt><a href="https://gitlab.com/bakyun/">Bakyun</a></dt>
+              <dd>Bakyun is an activity pub server, written in Golang</dd>
+
+              <dt>
+                <a href="https://github.com/DiscordInjections/">
+                  Discord Injections
+                </a>
+              </dt>
+              <dd>
+                Discord Injections is a mod loader for Discord.
+                <i>Careful: Modding is against their ToS!</i>
+              </dd>
+
+              <dt><a href="https://github.com/cking/dotfiles">dotfiles</a></dt>
+              <dd>
+                My personal dotfiles (has zsh, vim and asdf)
+              </dd>
+            </dl>
+          </div>
+          <div data-tabs-pane class="tabs-pane" id="services">
+            <p>Under my domain, I host the following services</p>
+
+            <dl>
+              <dt><a href="https://fedi.z0ne.moe">fedi.z0ne.moe</a></dt>
+              <dd>An activity pub server, currently running Pleroma</dd>
+
+              <dt><a href="https://cloud.z0ne.moe">cloud.z0ne.moe </a></dt>
+              <dd>A next cloud instance</dd>
+
+              <dt><a href="https://mail.z0ne.moe">mail.z0ne.moe </a></dt>
+              <dd>My webmail, running rainloop</dd>
+            </dl>
+          </div>
+          <div data-tabs-pane class="tabs-pane" id="servers">
+            <div class="server">
+              <img src="images/server/milim.png" alt="Milim server icon" />
+              <div class="container">
+                <p class="name">milim</p>
+                <p class="desc">Server for everything</p>
+                <p class="host">Scaleway (Online.net)</p>
+                <p class="cores">4</p>
+                <p class="ram">4096MiB</p>
+                <p class="storage">100GB (NVMe SSD)</p>
+              </div>
+            </div>
+            <div class="server">
+              <img src="images/server/02.jpg" alt="Milim server icon" />
+              <div class="container">
+                <p class="name">zerotsu</p>
+                <p class="desc">Object Storage</p>
+                <p class="host">Scaleway (Online.net)</p>
+                <p class="cores">irrelevant</p>
+                <p class="ram">irrelevant</p>
+                <p class="storage">S3 Object Storage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
