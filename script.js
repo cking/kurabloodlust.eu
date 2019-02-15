@@ -23,7 +23,8 @@ async function main() {
   } catch (err) {}
 
   let bgto = null
-  const EE = new Konami(() => {
+  Mousetrap.bind('up up down down left right left right b a enter', () => {
+    console.log('KONAMI ACTIVATED')
     const bg = document.getElementsByClassName('bg')[0]
     bg.style.zIndex = 9999
 
