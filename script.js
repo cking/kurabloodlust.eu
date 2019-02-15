@@ -22,6 +22,20 @@ async function main() {
     document.body.prepend(div)
   } catch (err) {}
 
+  let bgto = null
+  const EE = new Konami(() => {
+    const bg = document.getElementsByClassName('bg')[0]
+    bg.style.zIndex = 9999
+
+    if (bgto != null) {
+      window.clearTimeout(bgto)
+    }
+    bgto = window.setTimeout(() => {
+      bgto = null
+      bg.style.zIndex = -1
+    }, 5000)
+  })
+
   tabby.init()
 }
 
