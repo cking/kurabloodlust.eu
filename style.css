@@ -250,3 +250,45 @@ a.icon img {
 .server .storage:before {
   content: 'Storage: ';
 }
+
+ul.bots {
+  padding: 0;
+  margin: -1rem 0 0 0;
+  list-style-type: none;
+}
+
+ul.bots li {
+  display: grid;
+  grid:
+    [row1-start] "avatar name link" 1.5rem [row1-end]
+    [row2-start] "avatar description description" auto [row2-end]
+    / 90px auto auto;
+  margin: 1em -1rem;
+  padding: 1rem 1rem;
+}
+
+ul.bots li:nth-child(2) {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+ul.bots img {
+  grid-area: avatar;
+  width: calc(100% - 1rem);
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+
+ul.bots div {
+  grid-area: description;
+}
+
+ul.bots span {
+  grid-area: name;
+  font-weight: bold;
+}
+
+ul.bots span.owner {
+  grid-area: link;
+  font-weight: normal;
+}
