@@ -48,6 +48,26 @@
     "bot": "skeletor@shitposter.club",
     "owner": "dielan@shitposter.club",
     "cat": "image"
+  },
+  {
+    "bot": "flatbot@neckbeard.xyz",
+    "owner": "dielan@shitposter.club",
+    "cat": "image"
+  },
+  {
+    "bot": "blondebot@yorishiro.space",
+    "owner": "dielan@shitposter.club",
+    "cat": "image"
+  },
+  {
+    "bot": "Hornybot@neckbeard.xyz",
+    "owner": "dielan@shitposter.club",
+    "cat": "image"
+  },
+  {
+    "bot": "elfbot@welovela.in",
+    "owner": "dielan@shitposter.club",
+    "cat": "image"
   }
 ].forEach(async (entry) => {
   try {
