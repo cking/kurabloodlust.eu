@@ -68,6 +68,11 @@
     "bot": "elfbot@welovela.in",
     "owner": "dielan@shitposter.club",
     "cat": "image"
+  },
+  {
+    "bot": "sataniabot@satania.space",
+    "owner": "satanya@satania.space",
+    "cat": "image",
   }
 ].forEach(async (entry) => {
   try {
