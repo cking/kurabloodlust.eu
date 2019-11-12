@@ -40,7 +40,7 @@
     "cat": "image"
   },
   {
-    "bot": "ffbot@shigusegubu",
+    "bot": "ffbot@shigusegubu.club",
     "owner": "dielan@shitposter.club",
     "cat": "image"
   },
