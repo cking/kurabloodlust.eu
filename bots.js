@@ -94,13 +94,7 @@ function resolv (acct) {
 
 function finger (acct) {
   console.debug("fingering", acct)
-  return fetch("https://" + acct.host + "/.well-known/webfinger?resource=" + encodeURIComponent("acct:" + acct.acct), {
-    headers: {
-      "Accept": 'application/activity+json',
-      "X-Requested-With": "xmlhttprequest"
-    },
-    mode: "cors"
-  }).
+  return fetch("https://" + acct.host + "/.well-known/webfinger?resource=" + encodeURIComponent("acct:" + acct.acct)).
     then(res => res.json()).
     then(json => json.links)
 }
