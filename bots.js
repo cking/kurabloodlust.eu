@@ -93,7 +93,8 @@ function resolv (acct) {
 }
 
 function finger (acct) {
-  return fetch("https://cors.kurabloodlust.eu/https://" + acct.host + "/.well-known/webfinger?resource=" + encodeURIComponent("acct:" + acct.acct), {
+  console.debug("fingering", acct)
+  return fetch("https://" + acct.host + "/.well-known/webfinger?resource=" + encodeURIComponent("acct:" + acct.acct), {
     headers: {
       "Accept": 'application/activity+json',
       "X-Requested-With": "xmlhttprequest"
@@ -105,6 +106,7 @@ function finger (acct) {
 }
 
 function ap (url) {
+  console.debug("fetching", url)
   return fetch("https://cors.kurabloodlust.eu/" + url, {
     headers: {
       "Accept": 'application/activity+json',
