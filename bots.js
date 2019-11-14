@@ -73,6 +73,11 @@
     "bot": "sataniabot@satania.space",
     "owner": "satanya@satania.space",
     "cat": "image",
+  },
+  {
+    "bot": "KyaruBot@ihatebeinga.live",
+    "owner": "kumicota@weeaboo.space",
+    "cat": "image",
   }
 ].forEach(async (entry) => {
   try {
