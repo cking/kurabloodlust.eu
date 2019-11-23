@@ -78,6 +78,11 @@
     "bot": "KyaruBot@ihatebeinga.live",
     "owner": "kumicota@weeaboo.space",
     "cat": "image",
+  },
+  {
+    "bot": "meikobot@dystopian.space",
+    "owner": "dyske@kawen.space",
+    "cat": "image"
   }
 ].forEach(async (entry) => {
   try {
