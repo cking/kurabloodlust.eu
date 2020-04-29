@@ -10,17 +10,6 @@ body {
 .wrapper {
   width: 50em;
   margin: 5em auto;
-  /*
-  background-color: #ece9d8;
-  position: relative;
-  margin-top: -224px;
-  top: 50vh;
-  border: 3px #0d5ae2 outset;
-  border-radius: 3px;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  padding: 1px;
-  */
 }
 
 .wrapper > header {
