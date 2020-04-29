@@ -209,10 +209,8 @@ a.icon img {
 }
 
 .wrapper > footer div {
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
+  text-align: center;
   padding: 1rem;
-  box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.6);
 }
 
 .wrapper > footer select {
