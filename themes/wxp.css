@@ -1,0 +1,202 @@
+html,
+body {
+  max-height: 100vh;
+}
+body {
+  background-color: #004e98;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  width: 465px;
+  height: 458px;
+  margin: auto;
+  background-color: #ece9d8;
+  position: relative;
+  margin-top: -224px;
+  top: 50vh;
+  border: 3px #0d5ae2 outset;
+  border-radius: 3px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding: 1px;
+}
+
+.wrapper > header {
+  height: 1.8rem;
+  background: linear-gradient(to bottom, #3a8bf8, #015fec 10%, #0c4aa4 85%, #0d5ae2 95%, rgba(13, 90, 226, 0));
+  padding: 0.4rem 0.4rem;
+  display: block;
+  margin: -4px -4px 4px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.wrapper > header .ava {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+
+.wrapper > header h1 {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.wrapper > header span {
+  display: block;
+  font-size: 0.8em;
+  margin: 0 0 0 0.2rem;
+}
+
+.wrapper > main {
+  margin: 1.5em 0.2rem 0.2rem;
+  display: block;
+}
+
+.wrapper > main .tab-header {
+  z-index: 2;
+}
+
+.wrapper > main .tab-header li {
+  display: inline-block;
+  position: relative;
+  border: 1px #a6aeaf solid;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 0;
+  background: linear-gradient(to bottom, #f1cd8f, #f1cd8f 2px, #fcfcfe 4px);
+  padding: calc(0.2em - 2px) 0.4em;
+  margin-right: -2px;
+}
+
+.wrapper > main .tab-header a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper > main .tab-header li.active {
+  padding: 0.2em 0.4em;
+  background: linear-gradient(to bottom, #f4af35, #f4af35 2px, #fcfcfe 4px);
+}
+
+.wrapper > main .tab-content {
+  z-index: 1;
+  margin-top: -2px;
+  border: 1px #a6aeaf solid;
+  background-color: #fcfcfe;
+  height: 350px;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.wrapper > main h2 {
+  margin-top: 0;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.items a {
+  flex: 1 64px;
+
+  border: 1px #003c74 solid;
+  box-shadow: 0 0 1px black inset;
+  border-radius: 3px;
+  text-align: center;
+  word-wrap: normal;
+  padding: 6px;
+  margin: 6px;
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.items a:active {
+  border: 1px #002d57 solid;
+  box-shadow: 0 0 2px black inset;
+  background: #dddddd;
+}
+
+.items a img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.servers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.servers .server {
+  flex: 1 128px;
+  border: 1px #d0d0bf solid;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 6px;
+}
+
+.servers .server img {
+  max-width: 96px;
+  max-height: 96px;
+  display: block;
+  margin: auto;
+}
+
+.server p.name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.server p.desc {
+  font-style: italic;
+}
+
+.server p {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0.25rem 0;
+}
+
+.server .host,
+.server .cores,
+.server .ram,
+.server .storage {
+  font-size: 0.8em;
+}
+
+.server .host:before,
+.server .cores:before,
+.server .ram:before,
+.server .storage:before {
+  font-style: italic;
+}
+
+.wrapper > footer div {
+  margin-left: auto;
+  float: right;
+  margin-right: 3px;
+}
+
+.wrapper > footer select {
+  width: 128px;
+  padding: 0;
+  background-color: white;
+  border: 1px #979a9d solid;
+}

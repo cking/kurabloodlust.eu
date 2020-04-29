@@ -1,0 +1,191 @@
+html,
+body {
+  max-height: 100vh;
+}
+body {
+  background-color: #008080;
+  color: black;
+  font-size: 0.8rem;
+}
+
+.wrapper {
+  width: 465px;
+  height: 448px;
+  margin: auto;
+  background-color: #c0c0c0;
+  position: relative;
+  margin-top: -224px;
+  top: 50vh;
+  border: 2px black outset;
+  box-shadow: 0 0 0 1px #9c9c9c inset;
+  padding: 1px;
+  overflow: hidden;
+}
+
+.wrapper > header {
+  height: 1.2rem;
+  background: linear-gradient(to right, #000080, #1084d0);
+  padding: 0.1rem;
+  display: block;
+}
+
+.wrapper > header .ava {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+
+.wrapper > header h1 {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+}
+
+.wrapper > header span {
+  display: block;
+  font-size: 0.8em;
+  margin: 0 0 0 0.2rem;
+}
+
+.wrapper > main {
+  margin: 1.5em 0.2rem 0.2rem;
+  display: block;
+}
+
+.wrapper > main .tab-header {
+  z-index: 2;
+}
+
+.wrapper > main .tab-header li {
+  display: inline-block;
+  position: relative;
+  border: 2px black outset;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 0;
+  background: #c0c0c0;
+  padding: calc(0.2em - 2px) 0.4em;
+  margin-right: -2px;
+}
+
+.wrapper > main .tab-header a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.wrapper > main .tab-header li.active {
+  padding: 0.2em 0.4em;
+}
+
+.wrapper > main .tab-content {
+  z-index: 1;
+  margin-top: -2px;
+  border: 2px black outset;
+  height: 350px;
+  padding: 0.5rem;
+  overflow: auto;
+}
+
+.wrapper > main h2 {
+  margin-top: 0;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.items a {
+  flex: 1 64px;
+
+  border: 2px black outset;
+  text-align: center;
+  word-wrap: normal;
+  padding: 6px;
+  margin: 6px;
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.items a:active {
+  border: 2px black inset;
+  background: #dddddd;
+}
+
+.items a img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: auto;
+}
+
+.servers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.servers .server {
+  flex: 1 128px;
+  border: 2px #999999 groove;
+  padding: 6px;
+  margin: 6px;
+}
+
+.servers .server img {
+  max-width: 96px;
+  max-height: 96px;
+  display: block;
+  margin: auto;
+}
+
+.server p.name {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.server p.desc {
+  font-style: italic;
+}
+
+.server p {
+  line-height: 1.2;
+  padding: 0;
+  margin: 0.25rem 0;
+}
+
+.server .host,
+.server .cores,
+.server .ram,
+.server .storage {
+  font-size: 0.8em;
+}
+
+.server .host:before,
+.server .cores:before,
+.server .ram:before,
+.server .storage:before {
+  font-style: italic;
+}
+
+.wrapper > footer div {
+  margin-left: auto;
+  float: right;
+  margin-right: 3px;
+}
+
+.wrapper > footer select {
+  width: 128px;
+  padding: 0;
+  background-color: white;
+  border: 2px black inset;
+}

@@ -1,43 +1,49 @@
-async function main() {
-  try {
-    console.log('fetching backgrounds...')
-    const list = await fetch('/images/bg/list.json').then(res => res.json())
-    console.log('found', list.length, 'entries')
+(function () {
+  const l = new Logger("SC", "rebeccapurple")
 
-    const bg = '/images/bg/' + list[Math.floor(Math.random() * list.length)]
-    console.log('selected', bg)
-
-    const div = document.createElement('div')
-    div.style.backgroundImage = 'url(' + bg + ')'
-    div.style.backgroundSize = 'cover'
-
-    div.style.position = 'absolute'
-    div.style.top = 0
-    div.style.left = 0
-    div.style.width = '100vw'
-    div.style.height = '100vh'
-    div.style.zIndex = -1
-    div.classList.add('bg')
-
-    document.body.prepend(div)
-  } catch (err) {}
-
-  let bgto = null
-  Mousetrap.bind('up up down down left right left right b a enter', () => {
-    console.log('KONAMI ACTIVATED')
-    const bg = document.getElementsByClassName('bg')[0]
-    bg.style.zIndex = 9999
-
-    if (bgto != null) {
-      window.clearTimeout(bgto)
+  if (location.hash.length <= 1) {
+    l.info("Opening default tab...")
+    const hash = document.querySelector(".tab-header [data-default] a").href.split("#").pop()
+    location.hash = "#" + hash
+  }
+  l.info("Enabling tab-helper")
+  function activateTab (el) {
+    if (el.nodeName.toLowerCase() === "a") {
+      el = el.parentNode
+    } else if (el.nodeName.toLowerCase() !== "li") {
+      return
+    } else {
+      location.hash = "#" + el.querySelector("a").href.split("#").pop()
     }
-    bgto = window.setTimeout(() => {
-      bgto = null
-      bg.style.zIndex = -1
-    }, 5000)
+
+    Array.from(document.querySelectorAll(".tab-header li"))
+      .forEach(t => t.classList.remove("active"))
+    el.classList.add("active")
+  }
+
+  activateTab(document.querySelector(`.tab-header a[href$='${location.hash}']`))
+  document.querySelector(".tab-header").addEventListener("click", ev => {
+    activateTab(ev.target)
   })
 
-  tabby.init()
-}
+  l.info("Adding javascript theme changer")
+  const footer = document.querySelector(".wrapper > footer")
+  const select = document.createElement("select")
+  const div = document.createElement("div")
+  div.appendChild(document.createTextNode("Theme: "))
+  div.appendChild(select)
+  footer.appendChild(div)
 
-main().catch(console.error)
+  const themes = Array.from(document.querySelectorAll("link[rel*='stylesheet'][title]"))
+  themes.forEach(t => {
+    const option = document.createElement("option")
+    option.appendChild(document.createTextNode(t.title))
+    select.appendChild(option)
+  })
+
+  select.value = localStorage.theme
+
+  select.addEventListener("change", ev => {
+    changeTheme(ev.target.value)
+  })
+})()
