@@ -1,237 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kura Bloodlust</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- sanitize all the styles -->
     <link rel="stylesheet" href="https://unpkg.com/sanitize.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="themes/kura.css" title="Kura" />
-    <link rel="alternate stylesheet" href="themes/w98.css" title="Windows 98" />
-    <link rel="alternate stylesheet" href="themes/wxp.css" title="Windows XP" />
-    <link rel="alternate stylesheet" href="themes/w10.css" title="Windows 10" />
-    <link rel="alternate stylesheet" href="themes/ffxiv.css" title="Final Fantasy 14" />
-    <script src="preload.js"></script>
-    <script defer src="script.js"></script>
   </head>
 
   <body>
     <div class="wrapper">
-      <header>
+      <header class="page-header">
         <img src="images/ava.gif" class="ava" alt="" />
         <h1>Kura Bloodlust</h1>
         <span>
-          Also known as Criss - an enthusiastic developer, gamer and fan of eastern culture.
+          Also known as Criss - an enthusiastic developer, gamer and fan of Asian culture.
         </span>
-      </header>
 
-      <main>
-        <div class="tabs">
-          <ul class="tab-header">
-            <li data-default><a href="#about">About</a></li>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
             <li><a href="#social">Social</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#servers">Servers</a></li>
+            <li><a href="#imprint">Imprint</a></li>
           </ul>
+        </nav>
+      </header>
 
-          <div class="tab-content">
-            <div class="tab-pane" id="about">
-              <h2>So, who am I?</h2>
+      <main>
+        <div id="about">
+          <h2>So, who am I?</h2>
 
-              <p>
-                I'm just another nerd who likes <i>programming</i>,
-                <i>gaming</i> and <i>appreciating eastern culture</i>.
-              </p>
-              <p>
-                During the day, I spend my time as a developer, at night you can
-                usually find me occupied with games, anime or internet culture.
-              </p>
-              <p>
-                I tend to dabble in different projects and things, my interests
-                are wide spread. Feel free to get in contact with me to learn
-                more!
-              </p>
-            </div>
+          <p>
+            I'm just another nerd who likes <i>programming</i>,
+            <i>gaming</i> and <i>watching animated movies and series of Asian origin</i>.
+          </p>
+          <p>
+            During the day, I spend my time as a developer, at night you can
+            usually find me occupied with games, anime or other internet culture.
+          </p>
+          <p>
+            I tend to dabble in different projects and things, my interests
+            are wide spread. Feel free to get in contact with me to learn
+            more!
+          </p>
+        </div>
 
-            <div class="tab-pane" id="social">
-              <h2>Social Contact</h2>
-              <div class="items">
-                <a href="https://fedi.z0ne.moe/kura" class="icon">
-                  <img src="images/social/fediverse.svg" alt="" />
-                  <span>Fediverse</span>
-                </a>
-                <a href="https://matrix.to/#/@kura:yuri.im" class="icon">
-                  <img src="images/social/bubbles.svg" alt="" />
-                  <span>Matrix</span>
-                </a>
-                <a href="mailto:criss@kurabloodlust.eu" class="icon">
-                  <img src="images/social/mail.svg" alt="" />
-                  <span>E-Mail</span>
-                </a>
-                <a href="https://kitsu.io/users/kurabloodlust" class="icon">
-                  <img src="images/social/kitsu.svg" alt="" />
-                  <span>Kitsu</span>
-                </a>
-                <a href="https://twitch.tv/kurabloodlust" class="icon">
-                  <img src="images/social/twitch.svg" alt="" />
-                  <span>Twitch</span>
-                </a>
-                <a href="https://youtube.com/user/cking4live" class="icon">
-                  <img src="images/social/youtube.svg" alt="" />
-                  <span>Youtube</span>
-                </a>
-                <a href="https://steamcommunity.com/id/kurabloodlust" class="icon">
-                  <img src="images/social/steam.svg" alt="" />
-                  <span>Steam</span>
-                </a>
-                <a href="https://discord.gg/5HJctRu" class="icon">
-                  <img src="images/social/discord.svg" alt="" />
-                  <span>Discord</span>
-                </a>
-                <a href="xmpp:kura@xmpp.z0ne.moe" class="icon">
-                  <img src="images/social/xmpp.svg" alt="" />
-                  <span>XMPP</span>
-                </a>
-                <a href="https://reddit.com/u/kurabloodlust" class="icon">
-                  <img src="images/social/reddit.svg" alt="" />
-                  <span>reddit</span>
-                </a>
-                <a href="https://github.com/cking" class="icon">
-                  <img src="images/social/github.svg" alt="" />
-                  <span>Github</span>
-                </a>
-                <a href="https://gitlab.com/cking" class="icon">
-                  <img src="images/social/gitlab.svg" alt="" />
-                  <span>Gitlab</span>
-                </a>
+        <div id="social">
+          <h2>Social Contact</h2>
+          <p>
+            Feel free to contact me via one of the following methods.<br>
+            You can use my <a href="key.asc">public PGP key</a> to encrypt messages, or verify my answers.<br>
+            My OMEMO keys for XMPP are:
+          <ul>
+            <li>
+              <pre><output>5E230CE8 D3452518 B3C2103A D1995350 ECBE7B6A F6A19613 014D76C1 299E744B</output></pre>
+            </li>
+            <li>
+              <pre><output>c08c0f59 96c3982a 1e4e292d 7d88e58d 1cf81035 e618bbdc 6e410c19 463b595b</output></pre>
+            </li>
+          </ul>
+          </p>
+
+          <div class="socials">
+            <a href="https://fedi.z0ne.moe/kura" class="social">
+              <svg>
+                <use xlink:href="socials.svg#fediverse" />
+              </svg>
+              <div>
+                Fediverse<br>
+                <em>kura@fedi.z0ne.moe</em>
               </div>
-            </div>
+            </a>
 
-            <div class="tab-pane" id="projects">
-              <h2>My Projects</h2>
-
-              <p>
-                Things I am proud of, in no particular order.
-              </p>
-
-              <dl>
-                <dt><a href="https://gitlab.com/bakyun/">Bakyun</a></dt>
-                <dd>Bakyun is an activity pub server, written in Golang</dd>
-
-                <dt>
-                  <a href="https://github.com/DiscordInjections/">
-                    Discord Injections
-                  </a>
-                </dt>
-                <dd>
-                  Discord Injections is a mod loader for Discord.<br>
-                  <i>Careful: Modding is against their ToS!</i>
-                </dd>
-
-                <dt><a href="https://github.com/cking/dotfiles">dotfiles</a></dt>
-                <dd>
-                  My personal dotfiles (has zsh, vim and asdf)
-                </dd>
-              </dl>
-            </div>
-
-            <div class="tab-pane" id="services">
-              <h2>Provided Services</h2>
-              <p>Under my domain, I host the following services:</p>
-
-              <dl>
-                <dt><a href="https://fedi.z0ne.moe">fedi.z0ne.moe</a></dt>
-                <dd>An activity pub server, connected to the Fediverse through Pleroma</dd>
-
-                <dt><a href="https://cloud.z0ne.moe">cloud.z0ne.moe</a></dt>
-                <dd>A Nextcloud instance <i>(Currently unavailable)</i></dd>
-
-                <dt><a href="https://mail.z0ne.moe">mail.z0ne.moe</a></dt>
-                <dd>My webmail, running rainloop <i>(Currently unavailable)</i></dd>
-
-                <dt><a href="https://mc.z0ne.moe">mc.z0ne.moe</a></dt>
-                <dd>
-                  A whitelisted modded minecraft 1.15 server (Message me if you want to be added to the whitelist)
-                </dd>
-
-                <dt><a href="http://mumble.z0ne.moe">mumble.z0ne.moe</a></dt>
-                <dd>
-                  A free to access Mumble server
-                </dd>
-              </dl>
-            </div>
-
-            <div class="tab-pane" id="servers">
-              <h2>z0ne servers</h2>
-
-              <div class="servers">
-                <div class="server">
-                  <img src="images/server/milim.png" alt="Milim server icon" />
-                  <div class="container">
-                    <p class="name">milim</p>
-                    <p class="desc">Main Server</p>
-                    <p class="host">kimsufi (OVH)</p>
-                    <p class="cores">4</p>
-                    <p class="ram">16GB</p>
-                    <p class="storage">2TB</p>
-                  </div>
-                </div>
-                <div class="server">
-                  <img src="images/server/levi.jpg" alt="Levi server icon" />
-                  <div class="container">
-                    <p class="name">levi</p>
-                    <p class="desc">Home Server</p>
-                    <p class="host">Home</p>
-                    <p class="cores"></p>
-                    <p class="ram">MB</p>
-                    <p class="storage">120GB (SSD), 1TB (HDD)</p>
-                  </div>
-                </div>
-                <div class="server">
-                  <img src="images/server/02.jpg" alt="Zerotsu server icon" />
-                  <div class="container">
-                    <p class="name">zerotsu</p>
-                    <p class="desc">Object Storage</p>
-                    <p class="host">Selfhosted (Minio)</p>
-                    <p class="cores">irrelevant</p>
-                    <p class="ram">irrelevant</p>
-                    <p class="storage">S3 Object Storage</p>
-                  </div>
-                </div>
-                <!-- div class="server">
-                  <img src="images/server/shana.png" alt="Shana server icon" />
-                  <div class="container">
-                    <p class="name">shana</p>
-                    <p class="desc">Database Server</p>
-                    <p class="host">Scaleway (Online.net)</p>
-                    <p class="cores">3</p>
-                    <p class="ram">4 GB</p>
-                    <p class="storage">50 GB</p>
-                  </div>
-                </div -->
-                <div class="server">
-                  <img src="images/server/astolfo.png" alt="Astolfo server icon" />
-                  <div class="container">
-                    <p class="name">astolfo</p>
-                    <p class="desc">Workstation</p>
-                    <p class="host">Home</p>
-                    <p class="cores">4</p>
-                    <p class="ram">16GB</p>
-                    <p class="storage">1TB (SSD), 2TB (SSHD), 4 TB (SSD)</p>
-                  </div>
-                </div>
+            <a href="https://matrix.to/#/@kura:yuri.im" class="social">
+              <svg>
+                <use xlink:href="socials.svg#matrix" />
+              </svg>
+              <div>
+                Matrix / Riot.im<br>
+                <em>@kura:yuri.im</em>
               </div>
-            </div>
+            </a>
+
+            <a href="mailto:me@kurabloodlust.eu" class="social">
+              <svg>
+                <use xlink:href="socials.svg#mail" />
+              </svg>
+              <div>
+                E-Mail<br>
+                <em>me@kurabloodlust.eu</em>
+              </div>
+            </a>
+
+            <a href="https://twitch.tv/kurabloodlust" class="social"><svg>
+                <use xlink:href="socials.svg#twitch" />
+              </svg>
+              <div>
+                Twitch<br>
+                <em>@kurabloodlust</em>
+              </div>
+            </a>
+
+            <a href="https://youtube.com/user/cking4live" class="social"><svg>
+                <use xlink:href="socials.svg#youtube" />
+              </svg>
+              <div>
+                YouTube<br>
+                <em>@cking4live</em>
+              </div>
+            </a>
+
+            <a href="https://steamcommunity.com/id/kurabloodlust" class="social"><svg>
+                <use xlink:href="socials.svg#steam" />
+              </svg>
+              <div>
+                Steam<br>
+                <em>@kurabloodlust</em>
+              </div>
+            </a>
+
+            <a href="https://discord.gg/tvY3q5H" class="social"><svg>
+                <use xlink:href="socials.svg#discord" />
+              </svg>
+              <div>
+                Discord<br>
+                <em>Kura#0010</em>
+              </div>
+            </a>
+
+            <a href="https://reddit.com/u/kurabloodlust" class="social"><svg>
+                <use xlink:href="socials.svg#reddit" />
+              </svg>
+              <div>
+                reddit<br>
+                <em>/u/kurabloodlust</em>
+              </div>
+            </a>
+
+            <a href="xmpp:kura@xmpp.z0ne.moe" class="social"><svg>
+                <use xlink:href="socials.svg#xmpp" />
+              </svg>
+              <div>
+                XMPP / Jabber<br>
+                <em>kura@xmpp.z0ne.moe</em>
+              </div>
+            </a>
+            <a href="https://github.com/cking" class="social"><svg>
+                <use xlink:href="socials.svg#github" />
+              </svg>
+              <div>
+                Github<br>
+                <em>@cking</em>
+              </div>
+            </a>
+            <a href="https://gitlab.com/cking" class="social"><svg>
+                <use xlink:href="socials.svg#gitlab" />
+              </svg>
+              <div>
+                Gitlab<br>
+                <em>@cking</em>
+              </div>
+            </a>
           </div>
+        </div>
+
+        <div id="projects">
+          <h2>My Projects</h2>
+
+          <p>
+            Things I am proud of, in no particular order.
+          </p>
+
+          <dl>
+            <dt><a href="https://gitlab.com/bakyun/">Bakyun</a></dt>
+            <dd>Bakyun was an experimental activity pub server, written in Golang</dd>
+
+            <dt>
+              <a href="https://github.com/DiscordInjections/">
+                Discord Injections
+              </a>
+            </dt>
+            <dd>
+              Discord Injections is a mod loader for Discord.<br>
+              <i>Careful: Modding is against their ToS!</i>
+              <p>
+                Development has been picked up again in a private repository.
+              </p>
+            </dd>
+
+            <dt><a href="https://github.com/cking/dotfiles">dotfiles</a></dt>
+            <dd>
+              My personal dotfiles (has zsh, vim and asdf)
+            </dd>
+          </dl>
+        </div>
+
+        <div id="services">
+          <h2>Provided Services</h2>
+          <p>Under my domain, I host the following services:</p>
+
+          <dl>
+            <dt><a href="https://fedi.z0ne.moe">fedi.z0ne.moe</a></dt>
+            <dd>An activity pub server, connected to the Fediverse through Pleroma</dd>
+
+            <dt><a href="https://cloud.z0ne.moe">cloud.z0ne.moe</a></dt>
+            <dd>A Nextcloud instance <i>(Currently unavailable)</i></dd>
+
+            <dt><a href="https://mail.z0ne.moe">mail.z0ne.moe</a></dt>
+            <dd>My webmail, running rainloop <i>(Currently unavailable)</i><br>The associated mail server is still
+              running!</dd>
+
+            <dt><a href="https://mc.z0ne.moe">mc.z0ne.moe</a></dt>
+            <dd>
+              A whitelisted modded minecraft 1.15 server (Message me if you want to be added to the whitelist)
+            </dd>
+
+            <dt><a href="http://mumble.z0ne.moe">mumble.z0ne.moe</a></dt>
+            <dd>
+              A free to access Mumble server
+            </dd>
+          </dl>
         </div>
       </main>
 
       <footer>
-      </footer>
+        <div id="imprint">
+          <h2>Impressum</h2>
+          <p>Data in accordance with § 5 of Germans TMG / Angaben gemäß § 5 TMG</p>
+          <p>
+            Christopher König <br>
+            Am Ochsenzoll 166<br>
+            22417 Hamburg
+          </p>
+
+          <h3>Kontakt</h3>
+          <p>
+            Telefon: 0177-3740348<br>
+            E-Mail: <a href="mailto:me@kurabloodlust.eu">me@kurabloodlust.eu</a>
+          </p>
+
+          <h3>Haftungsausschluss</h3>
+          <h4>Haftung für Inhalte</h4>
+          Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und
+          Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+          TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG
+          sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
+          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen
+          zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon
+          unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten
+          Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte
+          umgehend entfernen.
+
+          <h4>Haftung für Links</h4>
+          Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+          Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten
+          Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden
+          zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt
+          der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
+          konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden
+          wir derartige Links umgehend entfernen.
+
+          <h4>Urheberrecht</h4>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen
+          Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen
+          des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und
+          Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
+          dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
+          werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung
+          aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden
+          wir derartige Inhalte umgehend entfernen.
+
+          <h4>Datenschutz</h4>
+          Die Nutzung unserer Webseite ist ohne Angabe personenbezogener Daten möglich. Zudem werden keine Cookies oder
+          ähnliches erhoben.<br>
+          Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
+          Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+          möglich. <br>
+          Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
+          von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich
+          widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der
+          unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+        </div>
+    </div>
+    </footer>
     </div>
   </body>
 </html>
